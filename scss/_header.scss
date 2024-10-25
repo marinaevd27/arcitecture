@@ -1,0 +1,133 @@
+.header {
+    position: relative; 
+    top: 0;
+    width: 100%;
+    z-index: 10; 
+    padding-block: 2rem;
+&__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+// logo
+&__logo {
+    display: flex;
+    align-items: center;
+    margin-right: 5rem;
+   
+}
+&__logo-img {
+    max-height: 6rem;
+}
+&__logo-text {
+    font-size: 4.5rem;
+    font-weight: 600;
+}
+// Nav-menu
+&__navigation {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    flex-grow: 1;
+}
+&__nav {
+    display: flex;
+    align-items: center;
+}
+&__menu {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+   
+}
+&__menu-list {
+
+    margin: 0 1rem;
+}
+&__link {
+    color: black;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover{
+        color: $accent2;
+    }
+}
+// buttons
+&__buttons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+&__button {
+    padding: 0 2rem;
+    padding: 1.5rem 3rem;
+    transition: all .3s;
+    border: 2px solid $accent2;
+    background-color: $accent2;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s;
+    margin-right: 2rem;
+
+    &:hover {
+        background-color: darken($color: $accent2, $amount: 20%);
+        border-color: darken($color: $accent2, $amount: 20%);
+    }
+}
+&__icon {
+    margin-right: 2rem;
+    font-size: 2rem;
+}
+
+&__burger {
+    display: none; 
+}
+//  mobile
+
+@media (max-width: 992px) {
+    &__burger {
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-size: 2rem;
+        }
+    
+&__menu {
+    position: absolute;
+    flex-direction: column;
+    left: 0;
+    top: 100%;
+    gap: 2rem;
+    padding-block: 2rem;
+    align-items: center;
+    background-color: $accent2; 
+    width: 100%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+    transition: all .4s;
+   
+
+    &.nav--opened {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+}
+
+&__link {
+    color: $accent3;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover{
+        color: $accent1;
+    }
+}
+}
+
+
+
+
+}
+

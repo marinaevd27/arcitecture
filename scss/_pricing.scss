@@ -1,0 +1,125 @@
+.pricing {
+
+
+&__sub {
+    color: $accent2;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+&__title {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    color: black;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+&__plans {
+    gap: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+&__plan {
+    width: calc((100% - 4rem) / 3);
+    background-color: #f5f4f9;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    transition: all .3s;
+
+    &:hover {
+        border: 1px solid $accent2;
+
+        .pricing__plan-title {
+            color: $accent2;
+        }
+        .pricing__plan-btn {
+            color: white;
+            background-color:  $accent2;
+            border-color:  $accent2;
+        }
+    }
+}
+&__plan-white {
+    background-color: white;
+    padding: 5rem;
+    margin-bottom: 2rem;
+}
+&__plan-title {
+    font-size: 3rem;
+}
+&__plan-span {
+    font-size: 1.5rem; 
+}
+&__plan-text {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: .5rem;
+    margin-bottom: 3rem;
+}
+&__plan-icon {
+    font-size: 6rem;
+    color: blue;
+}
+&__plan-button {
+    padding: .4rem 2rem;
+    background-color: white;
+    border: 1px solid grey; 
+    margin-top: 5rem;
+    margin-left: 5rem;
+   
+}
+&__plan-space {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+&__plan-list {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+}
+&__plan-item {
+  margin-bottom: 1.5rem;
+ 
+}
+&__plan-check {
+    margin-right: .5rem;
+    color: $accent2;
+    font-size: 2rem;
+}
+&__plan-btn {
+    padding: 0 2rem;
+    padding: 1.5rem 3rem;
+    transition: all .3s;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s;
+   margin-top: 2rem;
+   margin-bottom: 3rem;
+}
+@media (max-width: 992px) {	
+	.pricing__plans {
+      flex-wrap: wrap;
+      gap: 3rem;
+       
+    }
+    &__plan {
+         width: 90%;
+    }
+    padding-inline: 10rem;
+
+    &__plan-white {
+        padding: 5rem 10rem;
+    }
+}
+}

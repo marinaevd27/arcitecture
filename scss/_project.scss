@@ -1,0 +1,52 @@
+.project {
+   height: 60vh;
+}
+
+.project__img-wrapper{
+    position: relative;
+}
+.project__img{
+ height: 60vh;
+width: 100%;
+object-fit: cover;
+   
+}
+
+.project__content {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
+.project__title {
+font-size: 5rem;
+
+}
+.project__text {
+font-size: 2rem;
+margin-bottom: 2rem;
+font-weight: 500;
+}
+.project__btn {
+    padding: 0 2rem;
+    padding: 1.5rem 3rem;
+    transition: all .3s;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s;
+    margin-right: 2rem;
+ cursor: pointer;
+
+    &:hover {
+        border: 2px solid $accent2;
+        background-color: $accent2;
+    }
+}
+

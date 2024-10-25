@@ -1,0 +1,114 @@
+.slider {
+background-color: #0f212b;
+position: relative;
+
+&__sub {
+  color: $accent2;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+&__title {
+  font-size: 3rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  color: white;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+&__items {
+  display: flex;
+  // flex-wrap: wrap;
+  gap: 2rem;
+  position: relative;
+}
+&__item {
+  width: calc((100% - 4rem) / 3);
+  position: relative;
+}
+&__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+
+}
+&__info {
+  position: absolute;
+  bottom: 10%;
+  left: 0%;
+  right: 0;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+}
+
+&__info-text {
+  font-size: 4rem;
+  font-weight: 600;
+ 
+}
+
+
+.splide {
+  width: 100%;
+  height: auto; 
+  overflow: hidden;
+}
+
+.splide__slide {
+  position: relative;
+  width: 100%;
+  height: 100vh; 
+}
+
+.splide__slide img {
+  width: 95%;
+  height: 100%;
+  object-fit: contain; 
+ 
+}
+
+
+.splide__arrows {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+color: white;
+padding: 2rem;
+}
+.splide__nav-arrow {
+  display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $accent3;
+        background-color: $accent3;
+        border-radius: 50%;
+        padding: 1rem;
+        font-size: 1.5rem;
+        color:black;
+        width: 4rem;
+        height: 4rem;
+        transition: all .3s;
+        cursor: pointer;
+       
+        &:hover {
+          background-color: $accent2;
+          color: white;
+          border: 1px solid $accent2;
+      }
+}
+.splide__nav-arrow--left {
+}
+
+.splide__nav-arrow--right {
+}
+ }
+ .splide__pagination__page.is-active  {
+  background-color: white;
+}

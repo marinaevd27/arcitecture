@@ -1,0 +1,21 @@
+.icons {
+padding-inline: 7rem;
+&__items {
+    display: flex;
+justify-content:space-between;
+align-items: center;
+
+   
+}
+
+
+&__item-icon {
+   font-size: 7rem;
+   transition: all .3s;
+
+ &:hover {
+color: $accent2;
+ }
+}
+}
+
